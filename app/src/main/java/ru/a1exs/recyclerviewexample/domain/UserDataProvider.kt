@@ -5,7 +5,7 @@ import kotlin.math.min
 
 class UserDataProvider(
     private val dataGenerator: DataGenerator,
-    private val count: Int
+    val count: Int
 ) {
 
     val users = mutableListOf<User>()

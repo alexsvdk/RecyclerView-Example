@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val intent = when (v.id) {
             R.id.btn_lv_short -> Intent(this, SmallListActivity::class.java)
             R.id.btn_lv_long -> Intent(this, LargeListActivity::class.java)
-            //R.id.btn_rv -> Intent(this, RecyclerViewActivity::class.java)
-            //R.id.btn_rv_adv -> Intent(this, AdvancedRecyclerViewActivity::class.java)
+            R.id.btn_rv -> Intent(this, RecyclerViewActivity::class.java)
+            R.id.btn_rv_adv -> Intent(this, AdvancedRecyclerViewActivity::class.java)
             else -> null
         }
         intent?.let(::startActivity) ?: Snackbar.make(
