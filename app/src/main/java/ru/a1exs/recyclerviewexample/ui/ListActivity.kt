@@ -15,7 +15,7 @@ abstract class ListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //todo set adapter
+        binding.listView.adapter = UsersListAdapter(this, usersProvider.allUsers)
     }
 
 }
